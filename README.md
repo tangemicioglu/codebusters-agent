@@ -30,7 +30,7 @@ PREPARE SCOUT - Move towards set scouting path to prepare for scouting.
 ## How could it have been improved?
 Several of those ahead of me used a strategy called "herding" where they tried to push the ghosts towards their own base. This made it easier to get the ghosts before the other player. Unfortunately, I couldn't find a way to integrate the idea into my code.  
 My "scouting" technique for finding ghosts when lacking information was very simplistic, and could be replaced with a better navigation script.  
-To some degree, the movement of ghosts and enemies can be simulated and predicted, this would take some time, but it could be useful.
+To some degree, the movement of ghosts and enemies can be simulated and predicted, this would take some time, but it could be useful.  
 My combat AI could use some refinement, and the match I lose in the examples (below) is a case where it's especially troublesome.  
 Of course, alternatives to heuristic-based AI are also possible, and some of the competitors built their own simulation to try and use approaches like genetic learning.  
 ## Example matches:
