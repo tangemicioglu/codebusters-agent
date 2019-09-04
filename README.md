@@ -2,7 +2,7 @@
 Heuristic-based AI used while competing in the CodinGame CodeBusters challenge. Made it to the "Legendary" tier and got 21st place overall. This project was written in 1 week because that was the duration of the challenge and confined to a single file due to the submission system of Codingame.
 ## What's the challenge?
 The goal of the game is to collect ghosts by busting and trapping them, and them bringing them to your base. The player who successfully brings the most ghosts to their base wins. Each player has a team of busters and the busters have a variety of actions: MOVE, BUST, RELEASE and STUN.  
-The full rules can be found on the challenge webpage at https://www.codingame.com/multiplayer/bot-programming/codebusters (Some rules are different from the original version, as there were slight modifications after the initial challenge.)
+The full rules can be found on the challenge webpage at https://www.codingame.com/multiplayer/bot-programming/codebusters (Some rules are different from the original version, as there were slight modifications after the initial challenge.)  
 The leaderboard can be found at https://www.codingame.com/leaderboards/challenge/codebusters/global
 ## How does the code work?
 Each agent acts as a state machine with decentralized decisionmaking and centralized memory & perception. Several heuristics are used to decide which state is most appropriate for the selected buster given the current situation. These heuristics were tuned over the course of the competition, albeit not very aggressively. The list of states are as follows:  
