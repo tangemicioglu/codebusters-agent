@@ -1,5 +1,5 @@
 # codebusters-player
-Heuristic-based AI used while competing in the CodinGame CodeBusters challenge. Made it to the "Legendary" tier and got 21st place overall. This project was written in 1 week because that was the duration of the challenge and confined to a single file due to the submission system of Codingame.
+Heuristic-based AI used while competing in the CodinGame CodeBusters challenge. Made it to the "Legendary" tier and got 21st place overall. This project was written in 1 week (the duration of the challenge) and confined to a single file due to the submission system of Codingame.
 ## What's the challenge?
 The goal of the game is to collect ghosts by busting and trapping them, and them bringing them to your base. The player who successfully brings the most ghosts to their base wins. Each player has a team of busters and the busters have a variety of actions: MOVE, BUST, RELEASE and STUN.  
 The full rules can be found on the challenge webpage at https://www.codingame.com/multiplayer/bot-programming/codebusters (Some rules are different from the original version, as there were slight modifications after the initial challenge.)  
@@ -27,12 +27,11 @@ EXTERMINATE - Bust ghost.
 INSPECT - Check positions of previously found ghosts to see if they're still there.  
 SCOUTING - Move along scouting path to check unknown positions.  
 PREPARE SCOUT - Move towards set scouting path to prepare for scouting.  
-## How could it have been improved?
-Several of those ahead of me used a strategy called "herding" where they tried to push the ghosts towards their own base. This made it easier to get the ghosts before the other player. Unfortunately, I couldn't find a way to integrate the idea into my code.  
-My "scouting" technique for finding ghosts when lacking information was very simplistic, and could be replaced with a better navigation script.  
-To some degree, the movement of ghosts and enemies can be simulated and predicted, this would take some time, but it could be useful.  
-My combat AI could use some refinement, and the match I lose in the examples (below) is a case where it's especially troublesome.  
-Of course, alternatives to heuristic-based AI are also possible, and some of the competitors built their own simulation to try and use approaches like genetic learning.  
+## Possible Improvements
+* Several of those ahead of me used a strategy called "herding" where they tried to push the ghosts towards their own base. This made it easier to get the ghosts before the other player.  
+* My "scouting" technique for finding ghosts when lacking information was very simplistic, and could be replaced with a better navigation script.  
+* To some degree, the movement of ghosts and enemies can be simulated and predicted, which could be useful to make other movements and memory more accurate.
+* My combat AI could use some refinement, and couldn't always gain the upper hand when going against enemy busters.  
 ## Example matches:
 https://www.codingame.com/replay/113706506 (Win)  
 https://www.codingame.com/replay/113703870 (Tie)  
